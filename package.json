@@ -4,12 +4,16 @@
   "description": "A simple, deployable redirector",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "dotenv -c -- node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andy Vanosdale <andy@waviisoft.com>",
   "license": "MIT",
   "dependencies": {
+    "@vercel/kv": "^0.2.4",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.3.0"
   }
 }
